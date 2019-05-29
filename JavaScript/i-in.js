@@ -21,7 +21,18 @@ console.table({
 
 console.log();
 const array = [1, 2, 3];
+array[cSymbol] = 4;
+array.key = 5;
 
 for (const index in array) {
   console.dir({ index, value: array[index] });
 }
+
+console.table({
+  0: 0 in array,
+  1: 1 in array,
+  10: 10 in array,
+  cSymbol: cSymbol in array,
+  key: 'key' in array,
+  toString: toString in array,
+});

@@ -24,6 +24,7 @@ array.key = 5;
 console.table({
   0: array.hasOwnProperty(0),
   1: array.hasOwnProperty(1),
+  10: array.hasOwnProperty(10),
   cSymbol: array.hasOwnProperty(cSymbol),
   'Symbol(\'d\')': array.hasOwnProperty(Symbol('d')),
   toString: array.hasOwnProperty('toString'),
