@@ -22,6 +22,7 @@ class Cancelable extends Promise {
     });
     this.canceled = false;
   }
+
   cancel() {
     this.canceled = true;
   }
