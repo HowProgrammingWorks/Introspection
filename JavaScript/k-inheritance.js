@@ -4,7 +4,7 @@ const inheritance = (instance, parents = []) => {
   const parent = Object.getPrototypeOf(instance);
   parents.push(parent.constructor.name);
   if (Object.getPrototypeOf(parent)) return inheritance(parent, parents);
-  else return parents;
+  return parents;
 };
 
 // Usage
