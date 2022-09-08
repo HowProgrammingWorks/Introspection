@@ -4,13 +4,12 @@
     "es6": true,
     "node": true
   },
-  "globals": {
-    "Atomics": true,
-    "BigInt": true
-  },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 2020
+  },
+  "globals": {
+    "BigInt": true
   },
   "rules": {
     "indent": [
@@ -29,7 +28,6 @@
       "error",
       "always"
     ],
-    "no-console": "off",
     "no-loop-func": [
       "error"
     ],
@@ -117,6 +115,9 @@
     "new-parens": [
       "error"
     ],
+    "no-lonely-if": [
+      "error"
+    ],
     "no-trailing-spaces": [
       "error"
     ],
@@ -152,7 +153,7 @@
     "space-before-function-paren": [
       "error",
       {
-        "anonymous": "always",
+        "anonymous": "never",
         "named": "never",
         "asyncArrow": "always"
       }
@@ -212,7 +213,7 @@
     ],
     "arrow-parens": [
       "error",
-      "as-needed"
+      "always"
     ],
     "arrow-body-style": [
       "error",
