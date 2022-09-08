@@ -7,7 +7,7 @@ const types = [
   (async function * () {}).constructor,
 ];
 
-const output = types.map(item => ({
+const output = types.map((item) => ({
   name: item.name,
   type: typeof item,
   ctr: item.constructor.name,

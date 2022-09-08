@@ -6,7 +6,7 @@ function Prototype() {}
 
 const classes = [Object, Abstraction, Extended, Prototype];
 
-const output = classes.map(Class => ({
+const output = classes.map((Class) => ({
   name: Class.name,
   type: typeof Class,
   Class,

@@ -2,7 +2,7 @@
 
 {
   const values = [5, Number(5), new Number(5)];
-  const output = values.map(value => ({
+  const output = values.map((value) => ({
     type: typeof value,
     ctr: value.constructor.name,
     value,
@@ -15,7 +15,7 @@
 
 {
   const values = ['text', String('text'), new String('text')];
-  const output = values.map(value => ({
+  const output = values.map((value) => ({
     type: typeof value,
     ctr: value.constructor.name,
     value,
@@ -28,7 +28,7 @@
 
 {
   const values = [true, Boolean(true), new Boolean(true)];
-  const output = values.map(value => ({
+  const output = values.map((value) => ({
     type: typeof value,
     ctr: value.constructor.name,
     value,
